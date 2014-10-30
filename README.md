@@ -7,6 +7,11 @@ hashmap.js
  - usage, hashmap.put("key","value");
  - hashmap.get("key");
 
+HashMap.js
+ - hashmap object that supports storage of objects in key-value.
+ - var h1 = new HashMap();
+ - supported methods are put("key", "value"), get("key"), exists("key"), listKeys()
+
 License
 ==========
 Copyright (c) 2014 GitHub, Inc. See the LICENSE file for license rights and limitations (GNU GPL v2.0)
