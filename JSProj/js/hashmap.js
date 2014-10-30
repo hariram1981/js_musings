@@ -1,16 +1,23 @@
 /**************************************
-Hashmap - creates an hashmap for objects
-to be stored and retrieved using keys.
-
-Functions supported are:
-  - size - returns size of map
-  - get - returns the value for a particular key
-  - put - sets the value to the particular key 
+* Hashmap - creates an hashmap for objects
+* to be stored and retrieved using keys.
+* 
+* Functions supported are:
+*   - size - returns size of map
+*   - get - returns the value for a particular key
+*   - put - sets the value to the particular key 
+*   - exists - if a key exists
+*   - listKeys - lists all keys
 ***************************************
-Version: 0.1
-Created: 28-10-2014
-Comment: 28-09-2014 - initial version
-Authors: Hariram S
+* Version: 0.2
+* Created: 28-10-2014
+* Comment: 30-10-2014 - slight modifications
+* Authors: Hariram S
+*
+* Copyright (c) 2014 Hariram S
+* Licensed under the GNU GPL v2.0 license.
+* https://github.com/hariram1981/js_musings/blob/master/LICENSE 
+* 
 **************************************/
 
 var hashmap = (function() {
@@ -94,7 +101,7 @@ var hashmap = (function() {
   }
 
   return {
-    version: '0.1',
+    version: '0.2',
     put: put,
     get: get,
     exists: exists,
