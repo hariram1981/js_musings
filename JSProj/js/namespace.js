@@ -16,9 +16,12 @@
 var namespace = function() {
 }
 
+/**
+ * Creates namespaces that are passed as an array argument to the function
+ * 
+ * @param names namespaces to be created as array
+ */
 namespace.create = function(names) {
-	//If array then create function for all
-	//Else create only one
 	for(a in names) {
 		window[names[a]] = function() {};
 	}
