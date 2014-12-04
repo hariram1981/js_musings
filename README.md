@@ -12,6 +12,16 @@ HashMap.js
  - var h1 = new HashMap();
  - supported methods are put("key", "value"), get("key"), exists("key"), listKeys()
 
+obj.js
+ - creates object with passed arguments and functions as its members.
+ - var o1 = new obj(["a"],["myfunc"]);
+ - the above will create an object o1 with variable a and member function myfunc.
+
+namespace.js
+ - creates namespaces for the array of arguments passed.
+ - namespace.create(["b","c","d"];
+ - the above will create namespaces for b, c and d. Later b can be given attributes and functions as "b.".
+
 License
 ==========
 Copyright (c) 2014 GitHub, Inc. See the LICENSE file for license rights and limitations (GNU GPL v2.0)
