@@ -14,7 +14,11 @@
 * https://github.com/hariram1981/js_musings/blob/master/LICENSE 
 * 
 **************************************/
-
+/**
+ * Function that takes in variables and functions as arrays
+ * and returns an object with those variables and functions are
+ * members.
+ */
 var obj = function(args, funcs) {
 	var o = new Object();
 	for(a in args) {
