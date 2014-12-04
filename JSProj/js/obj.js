@@ -19,10 +19,10 @@
  * and returns an object with those variables and functions are
  * members.
  */
-var obj = function(args, funcs) {
+var obj = function(vars, funcs) {
 	var o = new Object();
-	for(a in args) {
-		o[args[a]] = "";
+	for(a in vars) {
+		o[vars[a]] = "";
 	}
 	
 	for(f in funcs) {
