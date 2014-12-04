@@ -19,11 +19,7 @@ var namespace = function() {
 namespace.create = function(names) {
 	//If array then create function for all
 	//Else create only one
-	//if(Array.isArray()) {
-		for(a in names) {
-			window[names[a]] = function() {};
-		}
-	//} else {
-	//	window[names] = function(){};
-	//}
+	for(a in names) {
+		window[names[a]] = function() {};
+	}
 }
