@@ -27,6 +27,11 @@ Set.js
  - var s1 = new Set();
  - the above will create a set with values that can be added using add(<value>) method.
 
+TreeSet.js
+ - creates an array that stores values without duplication and sorted in ascending order.
+ - var t1 = new TreeSet();
+ - the above will create a set with values that can be added using add(<value>) method and is sorted in ascending order.
+
 License
 ==========
 Copyright (c) 2014 GitHub, Inc. See the LICENSE file for license rights and limitations (GNU GPL v2.0)
