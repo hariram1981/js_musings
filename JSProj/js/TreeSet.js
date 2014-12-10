@@ -21,59 +21,22 @@
 **************************************/
 
 function TreeSet() {
-  var _data = [];
-  var _size = 0;
-  this.findIndex = function(val) {
-    return _data.indexOf(val);
-  },
-  Object.defineProperty(this, "data", {
-	get: function() {
-	  return _data;
-	},
-	set: function(newValue) {
-	  _data = newValue;
-	}
-  }),
-  Object.defineProperty(this, "size", {
-	get: function() {
-	  return _size;
-	},
-	set: function(newValue) {
-	  _size = newValue;
-	}
-  });
 }
 
-TreeSet.prototype = {
-  version: '0.1',
-  constructor: Set,
-  add: function(value) {
-	 if(!value) {
-       console.warn("no value provided");
-	   return;
-	 } 
-     //Check if key exists and if so, then update the map
-	 var index = this.findIndex(value);
-     if(index == -1) {
-	   this.data[this.size] = value;
-       this.size = this.size + 1;
-       this.data.sort();
-	 } else {
-	   console.warn(value + " already exists");
-	 }
-  }, 
-  exists: function(value) {
-    var index = this.findIndex(value);
-    if(index == -1) {
-      return false;
-    } else {
-      return true;
-    }
-  },
-  count: function() {
-    return (this.size);
-  },
-  listValues: function() {
-    return this.data;
+TreeSet.prototype = new Set();
+
+TreeSet.prototype.add = function(value) {
+  if(!value) {
+	console.warn("no value provided");
+	  return;
+  } 
+  //Check if key exists and if so, then update the map
+  var index = this.findIndex(value);
+  if(index == -1) {
+    this.data[this.size] = value;
+	this.size = this.size + 1;
+	this.data.sort();
+  } else {
+	console.warn(value + " already exists");
   }
 }
