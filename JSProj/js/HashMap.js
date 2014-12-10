@@ -56,7 +56,7 @@ HashMap.prototype = {
       return;
     }
     if(!value) {
-      console.war("no value provided");
+      console.warn("no value provided");
       return;
     }
     
