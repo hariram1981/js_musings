@@ -22,6 +22,11 @@ namespace.js
  - namespace.create(["b","c","d"];
  - the above will create namespaces for b, c and d. Later b can be given attributes and functions as "b.".
 
+Set.js
+ - creates an array that stores values without duplicates.
+ - var s1 = new Set();
+ - the above will create a set with values that can be added using add(<value>) method.
+
 License
 ==========
 Copyright (c) 2014 GitHub, Inc. See the LICENSE file for license rights and limitations (GNU GPL v2.0)
