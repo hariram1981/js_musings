@@ -31,6 +31,7 @@ TreeSet.js
  - creates an array that stores values without duplication and sorted in ascending order.
  - var t1 = new TreeSet();
  - the above will create a set with values that can be added using add(<value>) method and is sorted in ascending order.
+ - depends on Set.js
 
 License
 ==========
