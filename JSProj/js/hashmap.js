@@ -1,5 +1,5 @@
 /**************************************
-* Hashmap - creates an hashmap for objects
+* Map - creates an map for objects
 * to be stored and retrieved using keys.
 * 
 * Functions supported are:
@@ -9,9 +9,10 @@
 *   - exists - if a key exists
 *   - listKeys - lists all keys
 ***************************************
-* Version: 0.2
+* Version: 0.3
 * Created: 28-10-2014
 * Comment: 30-10-2014 - slight modifications
+*        : 31-12-2014 - renaming to map
 * Authors: Hariram S
 *
 * Copyright (c) 2014 Hariram S
@@ -20,7 +21,7 @@
 * 
 **************************************/
 
-var hashmap = (function() {
+var map = (function() {
   //Array where key and value is stored
   var _data = [];
   //Size of the map (array size / 2)
@@ -101,7 +102,7 @@ var hashmap = (function() {
   }
 
   return {
-    version: '0.2',
+    version: '0.3',
     put: put,
     get: get,
     exists: exists,
