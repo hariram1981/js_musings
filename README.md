@@ -2,14 +2,14 @@ js_musings
 ==========
 Implementation of simple functionalities in JavaScript that can be used in various projects. Musings or deep reflections in JavaScript lead to these simple js files.
 
-hashmap.js
+map.js
  - creates an hashmap to store objects in arrays using key-value.
  - usage, hashmap.put("key","value");
- - hashmap.get("key");
+ - map.get("key");
 
-HashMap.js
- - hashmap object that supports storage of objects in key-value.
- - var h1 = new HashMap();
+Map.js
+ - map object that supports storage of objects in key-value.
+ - var h1 = new Map();
  - supported methods are put("key", "value"), get("key"), exists("key"), listKeys()
 
 obj.js
