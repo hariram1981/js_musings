@@ -11,6 +11,7 @@ Map.js
  - map object that supports storage of objects in key-value.
  - var h1 = new Map();
  - supported methods are put("key", "value"), get("key"), exists("key"), listKeys()
+ - supports maxValue to find max in the list of numbers as values
 
 obj.js
  - creates object with passed arguments and functions as its members.
